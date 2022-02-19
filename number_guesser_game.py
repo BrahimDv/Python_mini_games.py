@@ -4,7 +4,9 @@ top_of_range = input("Type a number: ")
 while top_of_range.isalpha() or top_of_range == '0' or top_of_range == 0:
     print('please enter a valid number superior than 0...')
     top_of_range = input("Type a number: ")
+    
 top_of_range=int(top_of_range)
+
 random_number = random.randint(0, top_of_range)
 
 guesses = 0
@@ -26,5 +28,6 @@ while True:
     else:
         print("You were below the number!")
 
+        
 print("You got it in", guesses, "guesses")
 
